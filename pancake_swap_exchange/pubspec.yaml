@@ -1,4 +1,4 @@
-name: PancakeSwapExchange
+name: pancake_swap_exchange
 description: Displaying the exchange rate in the BNB network of token A to token B on pancake swap.
 
 version: 1.0.0+1
