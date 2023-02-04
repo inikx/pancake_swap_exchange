@@ -5,9 +5,15 @@ abstract class AppTheme {
   static ThemeData appDarkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Montserrat',
-    scaffoldBackgroundColor: AppColors.darkBlue,
+    scaffoldBackgroundColor: AppColors.blue,
     appBarTheme: const AppBarTheme(
-      backgroundColor: AppColors.darkBlue,
+      titleTextStyle: TextStyle(
+        fontFamily: 'Montserrat',
+        fontSize: 23,
+        fontWeight: FontWeight.w400,
+        color: AppColors.white,
+      ),
+      backgroundColor: AppColors.blue,
       iconTheme: IconThemeData(color: AppColors.white),
       centerTitle: true,
     ),
@@ -27,15 +33,32 @@ abstract class AppTheme {
         fontWeight: FontWeight.w400,
         color: AppColors.white,
       ),
+      labelSmall: TextStyle(
+        fontSize: 17,
+        fontWeight: FontWeight.w400,
+        color: AppColors.white,
+      ),
+      bodyLarge: TextStyle(
+        fontSize: 25,
+        fontWeight: FontWeight.w600,
+        color: AppColors.purple,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: 25,
+        fontWeight: FontWeight.w500,
+        color: AppColors.white,
+      ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        foregroundColor: AppColors.purple,
         backgroundColor: AppColors.purple,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(50),
         ),
       ),
+    ),
+    iconTheme: const IconThemeData(
+      color: AppColors.white,
     ),
   );
 }

@@ -5,6 +5,9 @@ linter:
     public_member_api_docs: false
     sort_pub_dependencies: false
     always_declare_return_types: false
+    sort_constructors_first: false
 analyzer:
   errors:
     invalid_annotation_target: ignore
+    invalid_assignment: ignore
+    
